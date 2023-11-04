@@ -11,7 +11,7 @@ export const useCartStore = defineStore("CartStore", {
             count = parseInt(count)
 
             for (let i = 0; i < count; i++) {
-                this.items.push(item);
+                this.items.push({ ...item });
             }
 
         }
